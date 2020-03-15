@@ -1,0 +1,2 @@
+list1=[{'num':1,'name':"张三",'age':7,'wage':3000},{'num':1,'name':"李四",'age':3,'wage':20000},{'num':1,'name':"王五",'age':23,'wage':8000},{'num':1,'name':"钱六",'age':5,'wage':3000},{'num':1,'name':"郑七",'age':14,'wage':500}]
+print(sorted(list1,key=lambda i:(i['wage'],i['num']),reverse=True))
