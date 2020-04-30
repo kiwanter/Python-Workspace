@@ -3,7 +3,7 @@
 #      B 利用线程池来实现
 import threading
 import random
-def fun(x:str):
+def fun():
     for i in range(20):
         print(random.randint(0,100))
 
