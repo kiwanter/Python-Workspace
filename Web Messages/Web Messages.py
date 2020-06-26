@@ -38,11 +38,12 @@ except:
     print('数据库连接失败')
 
 
-
+#主页（登录功能与注册的实现和）
 @app.route('/')
 def index():
     return render_template('index.html',info='请输入用户名和密码')
 
+#相应登陆信息（正确则进入，错误则返回）
 @app.route('/login',methods=['POST'])
 def login():
     username=request.form.get('username')
@@ -57,10 +58,12 @@ def login():
     except:
         return render_template('index.html', info='数据库异常，无法登陆')
 
+#“注册”按钮的响应，进入注册页面
 @app.route('/register')
 def register():
     return render_template('register.html',info='输入信息注册新的账号')
 
+#注册信息响应（重名返回）
 @app.route('/registersf',methods=['POST'])
 def registersf():
     username=request.form.get('username')
@@ -78,6 +81,7 @@ def registersf():
     except:
         return render_template('index.html',info='数据库异常，无法注册')
 
+#留言信息的响应（留言成功后添加到数据库并刷新页面）
 @app.route('/message',methods=['POST','GET'])
 def message():
     message=request.form.get('message')
