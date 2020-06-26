@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/register.css">
     <title>账号注册</title>
 </head>
 <body>
@@ -10,11 +11,15 @@
             账号注册
         </h1>
     </div>
-    <form action="/registersf" method="post">
-        用户名 <input type="text" name="username" id="">
-        密码 <input type="password" name="password" id="">
-        {{info}}
-        <input type="submit" value="确认">
-    </form>
+    <div id="divform">
+        <form action="/registersf" method="post">
+            用户名 <input type="text" name="username">
+            <br>
+            密码 <input type="password" name="password">
+            <br>
+            <p id="divinfo">{{info}}</p>
+            <input type="submit" value="确认" id="buttonsubmit">
+        </form>
+    </div>
 </body>
 </html>

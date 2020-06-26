@@ -2,20 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <link rel="stylesheet" href="../static/css/login.css">
-    <title>登陆页面</title>
+    <title>留言版</title>
 </head>
-<body>
-    <h1>{{user}}</h1>
-    <form action="/message" method="post">
-        留言：<input type="text" name="message" id="">
-        {{info}}
-        <input type="hidden" name="username" value={{user}}>
-        <input type="submit" value="提交">
-    </form>
+<div>
+    <div id="divtitle">
+        <h1>
+            {{user}}
+        </h1>
+    </div>
+    <div id="divform"
+        <form action="/message" method="post">
+            留言：<input type="text" name="message" id="">
+            <br>
+            <p id="divinfo">{{info}}</p>
+            <br>
+            <input type="hidden" name="username" value={{user}}>
+            <input type="submit" value="提交" id="buttonsubmit">
+        </form>
+    </div>
     {% for t in lst %}
-    {{t}}
+    <div class="messages">
+        <h1 class="username">{{t[0]}}</h1>
+        <p class="message">{{t[1]}}</p>
+        <p class="time">{{t[2]}}</p>
+    </div>
     {% endfor %}
 </body>
 </html>

@@ -18,20 +18,12 @@ body{
     font-size: 30px;
 }
 
+#buttonsubmit{
+    position: relative;
+    top: -5px;
+    font-size: 30px;
+}
+
 #divinfo{
     font-size: 20px;
-}
-
-#buttonlogin{
-    position: relative;
-    top: -55px;
-    left: -50px;
-    font-size: 30px;
-}
-
-#buttonregister{
-    position: relative;
-    top: -100px;
-    left: 50px;
-    font-size: 30px;
 }
