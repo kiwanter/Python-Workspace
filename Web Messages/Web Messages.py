@@ -106,6 +106,7 @@ def query():
     for x in data:
         t = [x['username'], x['messages'], x['datetime']]
         lst.append(t)
+    lst.reverse()
     return lst
 
 if __name__ == '__main__':

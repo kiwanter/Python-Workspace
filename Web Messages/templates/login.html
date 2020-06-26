@@ -11,14 +11,14 @@
             {{user}}
         </h1>
     </div>
-    <div id="divform"
+    <div id="divform">
         <form action="/message" method="post">
             留言：<input type="text" name="message" id="">
             <br>
             <p id="divinfo">{{info}}</p>
             <br>
             <input type="hidden" name="username" value={{user}}>
-            <input type="submit" value="提交" id="buttonsubmit">
+            <input type="submit" value="提交" id="buttonmessage">
         </form>
     </div>
     {% for t in lst %}

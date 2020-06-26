@@ -18,7 +18,7 @@ body{
     font-size: 30px;
 }
 
-#buttonsubmit{
+#buttonmessage{
     position: relative;
     top:-50px;
     font-size: 30px;
@@ -40,7 +40,12 @@ body{
 }
 
 .message{
+    word-wrap: break-word;
+    word-break: normal;
     font-size: 30px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .time{
