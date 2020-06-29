@@ -9,10 +9,15 @@ try:
     config = ConfigParser()
     config.read('config.ini')
     host=config.get('mysql','host')
+    print(host)
     port=config.get('mysql','port')
+    print(port)
     user=config.get('mysql','user')
+    print(user)
     password=config.get('mysql','password')
+    print(password)
     database=config.get('mysql','database')
+    print(database)
 except:
     print('配置文件加载失败')
 
@@ -21,18 +26,18 @@ app=Flask(__name__)
 
 #连接数据库
 try:
-    # conn=pymysql.connect(host=host,
-    #                      port=port,
-    #                      user=user,
-    #                      password=password,
-    #                      database=database,
-    #                      charset='utf8')
-    conn = pymysql.connect(host='localhost',
-                           port=3306,
-                           user='root',
-                           password='123456',
-                           database='web messages',
-                           charset='utf8')
+    conn=pymysql.connect(host=host,
+                         port=int(port),
+                         user=user,
+                         password=password,
+                         database=database,
+                         charset='utf8')
+    # conn = pymysql.connect(host='localhost',
+    #                        port=3306,
+    #                        user='root',
+    #                        password='123456',
+    #                        database='web messages',
+    #                        charset='utf8')
     cursor=conn.cursor(cursor=pymysql.cursors.DictCursor)
 except:
     print('数据库连接失败')
