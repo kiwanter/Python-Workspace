@@ -1,54 +1,94 @@
 body{
-    background-color: darkcyan;
-    background-size: cover;
     text-align: center;
+    background: url("../img/bj.jpg") no-repeat;
+    background-size: cover;
+    font-size: .16rem;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 #divtitle{
-    background-color: rgba(0,0,255,0.8);
     width: 700px;
     margin: 0 auto;
     font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 .9rem #00d8ff;
+    line-height: 1.05rem;
+    position: relative;
+    top: 100px;
 }
 
 #divform{
-    background-color: darkgray;
-    width: 1000px;
+    position: relative;
+    top: 100px;
+    width: 500px;
+    height: 250px;
     margin: 0 auto;
     font-size: 30px;
+    background: url("../img/es.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 #buttonmessage{
     position: relative;
-    top:-50px;
+    top:0px;
     font-size: 30px;
+    background: url("../img/a.png") no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    width: 300px;
 }
 
 #divinfo{
     font-size: 20px;
+    text-shadow: 0 0 .9rem #00d8ff;
+    position: relative;
 }
 
 .messages{
-    background-color: burlywood;
+    background: url("../img/es.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 100px;
     width: 800px;
+    height: 400px;
     margin: 0 auto;
 }
 
 .username{
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
+    text-shadow: 0 0 .9rem #00d8ff;
+    position: relative;
+    left: 70px;
+    top: 60px;
 }
 
 .message{
+    position: relative;
+    top: 50px;
     word-wrap: break-word;
     word-break: normal;
     font-size: 30px;
     width: 600px;
     text-align: center;
     margin: 0 auto;
+    text-shadow: 0 0 .9rem #00d8ff;
 }
 
 .time{
     text-align: right;
     font-size: 15px;
+    text-shadow: 0 0 .9rem #00d8ff;
+    position: relative;
+    top: 80px;
+}
+
+#ly{
+    position: relative;
+    top: 50px;
+    text-shadow: 0 0 .9rem #00d8ff;
 }

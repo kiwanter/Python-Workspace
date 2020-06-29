@@ -1,29 +1,55 @@
 body{
-    background-color: darkcyan;
-    background-size: cover;
     text-align: center;
+    background: url("../img/bj.jpg") no-repeat;
+    background-size: cover;
+    font-size: .16rem;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 #divtitle{
-    background-color: rgba(0,0,255,0.8);
     width: 700px;
     margin: 0 auto;
     font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 .9rem #00d8ff;
+    line-height: 1.05rem;
+    position: relative;
+    top: 100px;
 }
 
 #divform{
-    background-color: darkgray;
-    width: 1000px;
+    position: relative;
+    top: 100px;
+    width: 500px;
+    height: 550px;
     margin: 0 auto;
     font-size: 30px;
+    background: url("../img/e.png") no-repeat;
+    background-size: 100% 100%;
 }
 
+
 #buttonsubmit{
+    width: 300px;
     position: relative;
-    top: -5px;
+    top: 150px;
     font-size: 30px;
+    background: url("../img/a.png") no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    text-shadow: 0 0 .9rem #00d8ff;
 }
 
 #divinfo{
     font-size: 20px;
+}
+
+.content{
+    position: relative;
+    top: 150px;
+    text-shadow: 0 0 .9rem #00d8ff;
 }

@@ -13,11 +13,10 @@
     </div>
     <div id="divform">
         <form action="/registersf" method="post">
-            用户名 <input type="text" name="username">
+            <div id="un" class="content"> 用户名 <input type="text" name="username"></div>
             <br>
-            密码 <input type="password" name="password">
-            <br>
-            <p id="divinfo">{{info}}</p>
+            <div id="pw" class="content"> 密码 <input type="password" name="password"></div>
+            <p id="divinfo" class="content">{{info}}</p>
             <input type="submit" value="确认" id="buttonsubmit">
         </form>
     </div>
